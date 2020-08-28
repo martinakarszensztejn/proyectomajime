@@ -98,49 +98,49 @@ Partial Class Form2
         Me.TextBox1.Location = New System.Drawing.Point(185, 56)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 6
+        Me.TextBox1.TabIndex = 1
         '
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(185, 82)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 7
+        Me.TextBox2.TabIndex = 2
         '
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(185, 111)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox3.TabIndex = 9
+        Me.TextBox3.TabIndex = 3
         '
         'TextBox4
         '
         Me.TextBox4.Location = New System.Drawing.Point(185, 137)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox4.TabIndex = 8
+        Me.TextBox4.TabIndex = 4
         '
         'TextBox5
         '
         Me.TextBox5.Location = New System.Drawing.Point(185, 164)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox5.TabIndex = 11
+        Me.TextBox5.TabIndex = 5
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(185, 188)
+        Me.TextBox6.Location = New System.Drawing.Point(185, 192)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox6.TabIndex = 10
+        Me.TextBox6.TabIndex = 6
         '
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(75, 290)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 12
+        Me.Button1.TabIndex = 7
         Me.Button1.Text = "Registrarse"
         Me.Button1.UseVisualStyleBackColor = True
         '
@@ -149,7 +149,7 @@ Partial Class Form2
         Me.Button2.Location = New System.Drawing.Point(273, 290)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 13
+        Me.Button2.TabIndex = 9
         Me.Button2.Text = "Volver"
         Me.Button2.UseVisualStyleBackColor = True
         '
@@ -158,7 +158,7 @@ Partial Class Form2
         Me.Button3.Location = New System.Drawing.Point(173, 290)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 14
+        Me.Button3.TabIndex = 8
         Me.Button3.Text = "Limpiar"
         Me.Button3.UseVisualStyleBackColor = True
         '

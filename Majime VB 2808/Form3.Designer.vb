@@ -24,8 +24,8 @@ Partial Class Form3
     Private Sub InitializeComponent()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.TBPass = New System.Windows.Forms.TextBox()
+        Me.TBUser = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
@@ -48,19 +48,19 @@ Partial Class Form3
         Me.Button1.Text = "Iniciar"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'TextBox3
+        'TBPass
         '
-        Me.TextBox3.Location = New System.Drawing.Point(228, 105)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox3.TabIndex = 18
+        Me.TBPass.Location = New System.Drawing.Point(228, 120)
+        Me.TBPass.Name = "TBPass"
+        Me.TBPass.Size = New System.Drawing.Size(100, 20)
+        Me.TBPass.TabIndex = 18
         '
-        'TextBox4
+        'TBUser
         '
-        Me.TextBox4.Location = New System.Drawing.Point(228, 79)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox4.TabIndex = 17
+        Me.TBUser.Location = New System.Drawing.Point(228, 79)
+        Me.TBUser.Name = "TBUser"
+        Me.TBUser.Size = New System.Drawing.Size(100, 20)
+        Me.TBUser.TabIndex = 17
         '
         'Label5
         '
@@ -74,7 +74,7 @@ Partial Class Form3
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(115, 108)
+        Me.Label3.Location = New System.Drawing.Point(115, 123)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(61, 13)
         Me.Label3.TabIndex = 15
@@ -87,8 +87,8 @@ Partial Class Form3
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.TBPass)
+        Me.Controls.Add(Me.TBUser)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label3)
         Me.Name = "Form3"
@@ -100,8 +100,8 @@ Partial Class Form3
 
     Friend WithEvents Button3 As Button
     Friend WithEvents Button1 As Button
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents TBPass As TextBox
+    Friend WithEvents TBUser As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Label3 As Label
 End Class
