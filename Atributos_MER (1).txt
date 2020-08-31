@@ -1,0 +1,15 @@
+SIN FN
+Empleado (ci*, usuario, contrasena, nombre, telefono, rango)
+Reserva (Estado
+Solicita (Fecha
+
+RNE
+-Cuando se confirma el pago, el atributo "Estado" en Reserva pasa a estar "Confirmado".
+-El Empleado que recibe mascotas es solamente de rango "Oficinista" o "Gerente".
+-El Empleado que confirma pago es de rango "Oficinista" o "Gerente".
+-El Empleado que cobra es de rango "Oficinista" o "Gerente" .
+-El Empleado que regula precio es solamente de rango "Gerente".
+-El Empleado que confirma la recepcion del transporte es solamente de rango "Recepcionista de Garage" o "Gerente".
+-El Empleado que confirma la salida del transporte es solamente de rango "Recepcionista de Garage" o "Gerente".
+-El Empleado que controla los horarios es solamente de rango "Gerente".
+-El Empleado que Escribe la solicitud de reserva es de rango "Oficinista" o "Gerente".
