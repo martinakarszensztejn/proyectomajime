@@ -13,7 +13,9 @@ Public Class Form3
         Dim consulta As String
         consulta = "Select * From majime.empleado Where usuario = '" & TBUser.Text & "' And password = '" & TBPass.Text & "';"
 
-        Dim comando As New MySqlCommand(consulta, Form1.conk)
+
+        Dim comando As New MySqlCommand(consulta, Form1.connk)
+
 
 
 
@@ -23,14 +25,6 @@ Public Class Form3
 
 
 
-
-        If Form1.conk.State.Open Then
-            Form1.conk.Close()
-            Form1.conk.Open()
-
-        Else
-
-        End If
         drd = comando.ExecuteReader
 
         Dim exito As Boolean
@@ -48,15 +42,15 @@ Public Class Form3
         End Try
 
         If exito Then
-            If Me.rangoUsuario = Me.rangos(0) Then
+            If Me.rangoUsuario = Me.rangoUsuario(0) Then
                 MainGerente.Show()
                 Me.Hide()
-            ElseIf Me.rangoUsuario = Me.rangos(2) Then
+            ElseIf Me.rangoUsuario = Me.rangoUsuario(2) Then
                 MainRecepcionistaGaraje.Show()
                 Me.Hide()
-            ElseIf Me.rangoUsuario = Me.rangos(1) Then
-
-                MainOficinista.Show()
+            ElseIf Me.rangoUsuario = Me.rangoUsuario(1) Then
+                MsgBox("WIP - Página no disponible")
+                'MainOficinista.Show()
                 Me.Hide()
 
             End If
@@ -66,15 +60,14 @@ Public Class Form3
             MsgBox("Error en el inicio de sesión")
 
         End If
-
-        TBUser.Text = ""
-        TBPass.Text = ""
+        drd.Close()
+        drd.Dispose()
+        comando.Dispose()
+        Form1.connk.Close()
 
     End Sub
 
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
-
-
 End Class

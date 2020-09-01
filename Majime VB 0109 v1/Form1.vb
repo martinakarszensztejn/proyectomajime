@@ -1,7 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class Form1
     Public connnn As New MySqlConnectionStringBuilder
-    Public conk As New MySqlConnection
+    Public connk As New MySqlConnection
 
 
 
@@ -22,14 +22,11 @@ Public Class Form1
             connnn.Server = "localhost"
             connnn.Database = "majime"
             connnn.Password = "password"
-            Dim connk As New MySqlConnection(connnn.ToString)
-            conk = connk
-
-            If Me.conk.State = ConnectionState.Open Then
-                Me.conk.Close()
-                Me.conk.Open()
+            connk = New MySqlConnection(connnn.ToString)
+            If connk.State = ConnectionState.Open Then
+                connk.Close()
             Else
-                Me.conk.Open()
+                connk.Open()
             End If
 
         Catch ex As Exception

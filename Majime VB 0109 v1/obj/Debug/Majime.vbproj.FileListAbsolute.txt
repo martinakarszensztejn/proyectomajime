@@ -79,4 +79,3 @@ C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 2808\obj\D
 C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 2808\obj\Debug\Majime.MainRecepcionistaGaraje.resources
 C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 2808\obj\Debug\Majime.SalidaVehiculos.resources
 C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 2808\obj\Debug\Majime.VerHorarios.resources
-C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 2808\obj\Debug\Majime.MainOficinista.resources

@@ -50,23 +50,6 @@
     End Sub
 
     Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
-        Me.Hide()
-        SalidaVehiculos.Show()
-    End Sub
 
-    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
-        Form3.rangoUsuario = ""
-        Form1.Show()
-        Me.Hide()
-    End Sub
-
-    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
-        Me.Hide()
-        AgregarVehiculos.Show()
-    End Sub
-
-    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
-        Me.Hide()
-        VerHorarios.Show()
     End Sub
 End Class

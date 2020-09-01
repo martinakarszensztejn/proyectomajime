@@ -22,41 +22,49 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.SuspendLayout()
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(427, 177)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(131, 23)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Iniciar Sesión"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(178, 177)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(131, 23)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Registrarse"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Form1
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Name = "Form1"
-        Me.Text = "Form1"
-        Me.ResumeLayout(False)
+		Me.Button1 = New System.Windows.Forms.Button()
+		Me.Button2 = New System.Windows.Forms.Button()
+		Me.SuspendLayout()
+		'
+		'Button1
+		'
+		Me.Button1.BackColor = System.Drawing.Color.White
+		Me.Button1.Image = Global.Majime.My.Resources.Resources.user_go
+		Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+		Me.Button1.Location = New System.Drawing.Point(467, 310)
+		Me.Button1.Name = "Button1"
+		Me.Button1.Size = New System.Drawing.Size(131, 23)
+		Me.Button1.TabIndex = 0
+		Me.Button1.Text = "Iniciar Sesión"
+		Me.Button1.UseVisualStyleBackColor = False
+		'
+		'Button2
+		'
+		Me.Button2.BackColor = System.Drawing.Color.White
+		Me.Button2.Image = Global.Majime.My.Resources.Resources.user_add
+		Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+		Me.Button2.Location = New System.Drawing.Point(260, 310)
+		Me.Button2.Name = "Button2"
+		Me.Button2.Size = New System.Drawing.Size(131, 23)
+		Me.Button2.TabIndex = 1
+		Me.Button2.Text = "Registrarse"
+		Me.Button2.UseVisualStyleBackColor = False
+		'
+		'Form1
+		'
+		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+		Me.BackgroundImage = Global.Majime.My.Resources.Resources.logou1
+		Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+		Me.ClientSize = New System.Drawing.Size(800, 450)
+		Me.Controls.Add(Me.Button2)
+		Me.Controls.Add(Me.Button1)
+		Me.Name = "Form1"
+		Me.Text = "Form1"
+		Me.ResumeLayout(False)
 
-    End Sub
+	End Sub
 
-    Friend WithEvents Button1 As Button
+	Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
 End Class

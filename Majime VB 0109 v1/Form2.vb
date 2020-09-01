@@ -27,7 +27,7 @@ Public Class Form2
                 End If
                 sentencia = "INSERT INTO `empleado` (`nombre`, `ci`, `usuario`, `password`, `telefono`, `rango`) VALUES ('" & TextBox1.Text.ToLower & "', " & TextBox2.Text & ", '" & TextBox3.Text.ToLower & "', '" & TextBox4.Text.ToLower & "', " & TextBox5.Text & ", '" & rangoReal & "');"
                 Dim comando As New MySqlCommand
-                comando = New MySqlCommand(sentencia, Form1.conk)
+                comando = New MySqlCommand(sentencia, Form1.connk)
 
 
 
@@ -55,10 +55,6 @@ Public Class Form2
         TextBox4.Text = ""
         TextBox5.Text = ""
         TextBox6.Text = ""
-
-    End Sub
-
-    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 End Class
