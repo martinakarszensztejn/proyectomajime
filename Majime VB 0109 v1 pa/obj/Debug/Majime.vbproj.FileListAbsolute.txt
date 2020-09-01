@@ -80,3 +80,44 @@ C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 2808\obj\D
 C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 2808\obj\Debug\Majime.SalidaVehiculos.resources
 C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 2808\obj\Debug\Majime.VerHorarios.resources
 C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 2808\obj\Debug\Majime.MainOficinista.resources
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\bin\Debug\Majime.exe.config
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\bin\Debug\Majime.exe
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\bin\Debug\Majime.pdb
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\bin\Debug\Majime.xml
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\bin\Debug\Google.Protobuf.dll
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\bin\Debug\MySql.Data.dll
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\bin\Debug\System.Memory.dll
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\bin\Debug\Renci.SshNet.dll
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\bin\Debug\MySql.Data.xml
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\obj\Debug\Majime.vbprojAssemblyReference.cache
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\obj\Debug\Majime.AgregarCliente.resources
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\obj\Debug\Majime.AgregarFotos.resources
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\obj\Debug\Majime.AgregarMascota.resources
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\obj\Debug\Majime.AgregarVehiculos.resources
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\obj\Debug\Majime.CheckIn.resources
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\obj\Debug\Majime.Form1.resources
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\obj\Debug\Majime.Form2.resources
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\obj\Debug\Majime.Form3.resources
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\obj\Debug\Majime.Habitaciones.resources
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\obj\Debug\Majime.MainGerente.resources
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\obj\Debug\Majime.MainOficinista.resources
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\obj\Debug\Majime.MainRecepcionistaGaraje.resources
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\obj\Debug\Majime.Resources.resources
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\obj\Debug\Majime.Pagos.resources
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\obj\Debug\Majime.CrearReservas.resources
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\obj\Debug\Majime.SalidaVehiculos.resources
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\obj\Debug\Majime.VerCliente.resources
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\obj\Debug\Majime.VerClienteElegido.resources
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\obj\Debug\Majime.VerHorarios.resources
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\obj\Debug\Majime.VerMascota.resources
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\obj\Debug\Majime.VerMascotaElegida.resources
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\obj\Debug\Majime.VerReserva.resources
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\obj\Debug\Majime.VerReservaElegida.resources
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\obj\Debug\Majime.vbproj.GenerateResource.cache
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\obj\Debug\Majime.vbproj.CoreCompileInputs.cache
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\obj\Debug\Majime.vbproj.CopyComplete
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\obj\Debug\Majime.exe
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\obj\Debug\Majime.xml
+C:\Users\marti\OneDrive\Escritorio\Clase\Majime\Repositorio\Majime VB 0109 v1 pa\obj\Debug\Majime.pdb
