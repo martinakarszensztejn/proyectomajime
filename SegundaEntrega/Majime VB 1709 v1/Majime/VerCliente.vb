@@ -51,22 +51,15 @@ Public Class VerCliente
     Private Sub CargarLista()
         Dim consulta As String
         consulta = "Select * From majime.cliente;"
-
         Dim comando As New MySqlCommand(consulta, Guau.conk)
-
         Dim drd As MySqlDataReader
-
         If Guau.conk.State.Open Then
             Guau.conk.Close()
             Guau.conk.Open()
-
         Else
-
         End If
         drd = comando.ExecuteReader
-
         Dim exito As Boolean
-
         exito = False
         Dim valorlong As Integer
         ReDim Preserve clientesCI(0)
@@ -75,18 +68,13 @@ Public Class VerCliente
         clientesNom(0) = Nothing
         Try
             While drd.HasRows()
-
-
                 While drd.Read()
-
                     exito = True
                     clientesCI(clientesCI.Length() - 1) = drd.GetString(0)
                     clientesNom(clientesNom.Length() - 1) = drd.GetString(1)
-
                     valorlong = clientesCI.Length
                     ReDim Preserve clientesCI(valorlong)
                     ReDim Preserve clientesNom(valorlong)
-
                 End While
 
                 drd.NextResult()
@@ -110,5 +98,9 @@ Public Class VerCliente
 
 
         drd.Close()
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Guau.AbrirFormEnPanel(New AgregarCliente)
     End Sub
 End Class

@@ -70,6 +70,10 @@ Public Class VerMascota
 
         exito = False
         Dim valorlong As Integer
+        ReDim Preserve mascNomb(0)
+        ReDim Preserve mascNum(0)
+        mascNomb(0) = Nothing
+        mascNum(0) = Nothing
         Try
             While drd.HasRows()
 
