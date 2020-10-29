@@ -1,0 +1,6 @@
+ALTER TABLE `mkarszensztejn`.`pertenece` 
+ADD CONSTRAINT `numero_mascotafk`
+  FOREIGN KEY (`num_mascota`)
+  REFERENCES `mkarszensztejn`.`mascota` (`num_mascota`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;

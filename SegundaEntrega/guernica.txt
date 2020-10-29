@@ -1,0 +1,14 @@
+If Form3.rangoUsuario = Form3.rangos(0) Then
+            Guau.AbrirFormEnPanel(New MainGerente)
+        ElseIf Form3.rangoUsuario = Form3.rangos(2) Then
+            Guau.AbrirFormEnPanel(New MainRecepcionistaGaraje)
+        ElseIf Form3.rangoUsuario = Form3.rangos(1) Then
+            Guau.AbrirFormEnPanel(New MainOficinista)
+        End If
+
+Guau.AbrirFormEnPanel(New MainGerente)
+
+
+
+1602811946
+1602811908
