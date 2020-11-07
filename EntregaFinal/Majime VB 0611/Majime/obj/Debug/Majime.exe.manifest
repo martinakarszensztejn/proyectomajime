@@ -103,14 +103,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Majime.exe" size="2057696">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Majime.exe" size="2059744">
       <assemblyIdentity name="Majime" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>HeIZ3aAOeBUco0p2uoQgFubOpdwDmXUKGWlENRzi1Xk=</dsig:DigestValue>
+        <dsig:DigestValue>ZpibOWUhwUw0Z5XuSDvU2J3lNy5mxWgQphjQ37rldOo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
