@@ -183,12 +183,14 @@
     <Compile Include="Guau.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Habitacion.vb" />
     <Compile Include="Habitaciones.Designer.vb">
       <DependentUpon>Habitaciones.vb</DependentUpon>
     </Compile>
     <Compile Include="Habitaciones.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Horario.vb" />
     <Compile Include="MainGerente.Designer.vb">
       <DependentUpon>MainGerente.vb</DependentUpon>
     </Compile>
