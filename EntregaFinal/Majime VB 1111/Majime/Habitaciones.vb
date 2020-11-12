@@ -64,6 +64,7 @@ Public Class Habitaciones
     End Sub
 
     Private Sub GetPrices()
+
         Application.CurrentCulture = New CultureInfo("en-AU")
         consulta = "SELECT cuesta.nombre_tipo_habitacion, precio.precio_1m , precio.precio_2m , precio.precio_3m, precio.num_precio FROM cuesta
 JOIN precio ON precio.num_precio = cuesta.num_precio ORDER BY precio_1m DESC, nombre_tipo_habitacion ;"
@@ -139,47 +140,56 @@ JOIN precio ON precio.num_precio = cuesta.num_precio ORDER BY precio_1m DESC, no
             MsgBox("Usted no está autorizado para esta acción.")
         ElseIf Guau.rangoUsuario = Guau.rangos(0) Then
 
-
-            Try
-
-
-
-                If num_prec_for_suite <> 0 Then
-
-                    Dim sqlSent1 As String = "UPDATE `precio` SET `precio_1m` = CAST(" & TextBox1S.Text & " as DECIMAL(6, 2)), `precio_2m` = CAST(" & TextBox2S.Text & " as DECIMAL(6, 2)), `precio_3m` =  CAST(" & TextBox3S.Text & " as DECIMAL(6, 2)) WHERE  (`num_precio` = CAST(" & num_prec_for_suite & " as DECIMAL(6, 2)));"
-                    Dim comandoUpdPrecio1 As MySqlCommand
-                    comandoUpdPrecio1 = New MySqlCommand(sqlSent1, Guau.conk)
-                    comandoUpdPrecio1.ExecuteNonQuery()
-                End If
-                If num_prec_for_juniorsuite <> 0 Then
-                    Dim sqlSent2 As String = "UPDATE `precio` SET `precio_1m` = CAST(" & TextBox1JS.Text & " as DECIMAL(6, 2)), `precio_2m` = CAST(" & TextBox2JS.Text & " as DECIMAL(6, 2)), `precio_3m` =  CAST(" & TextBox3JS.Text & " as DECIMAL(6, 2)) WHERE (`num_precio` = CAST(" & num_prec_for_juniorsuite & " as DECIMAL(6, 2)));"
-                    Dim comandoUpdPrecio2 As MySqlCommand
-                    comandoUpdPrecio2 = New MySqlCommand(sqlSent2, Guau.conk)
-                    comandoUpdPrecio2.ExecuteNonQuery()
-                End If
-                If num_prec_for_minisuite <> 0 Then
-                    Dim sqlSent3 As String = "UPDATE `precio` SET `precio_1m` = CAST(" & TextBox1MS.Text & " as DECIMAL(6, 2)), `precio_2m` = CAST(" & TextBox2MS.Text & " as DECIMAL(6, 2)), `precio_3m` =  CAST(" & TextBox3MS.Text & " as DECIMAL(6, 2)) WHERE  (`num_precio` = CAST(" & num_prec_for_minisuite & " as DECIMAL(6, 2)));"
-                    Dim comandoUpdPrecio3 As MySqlCommand
-                    comandoUpdPrecio3 = New MySqlCommand(sqlSent3, Guau.conk)
-                    comandoUpdPrecio3.ExecuteNonQuery()
-                End If
-                If num_prec_for_estandar <> 0 Then
-                    Dim sqlSent4 As String = "UPDATE `precio` SET `precio_1m` = CAST(" & TextBox1E.Text & " as DECIMAL(6, 2)), `precio_2m` = CAST(" & TextBox2E.Text & " as DECIMAL(6, 2)), `precio_3m` =  CAST(" & TextBox3E.Text & " as DECIMAL(6, 2)) WHERE (`num_precio` = CAST(" & num_prec_for_estandar & " as DECIMAL(6, 2)));"
-                    Dim comandoUpdPrecio4 As MySqlCommand
-                    comandoUpdPrecio4 = New MySqlCommand(sqlSent4, Guau.conk)
-                    comandoUpdPrecio4.ExecuteNonQuery()
-                End If
-                If num_prec_for_estandar = 0 Or num_prec_for_juniorsuite = 0 Or num_prec_for_minisuite = 0 Or num_prec_for_suite = 0 Then
-                    Throw New ArgumentException("Error obteniendo ID de habitaciones")
+            If TextBox1S.Text = String.Empty OrElse TextBox2S.Text = String.Empty OrElse TextBox3S.Text = String.Empty OrElse TextBox1MS.Text = String.Empty OrElse TextBox2MS.Text = String.Empty OrElse TextBox3MS.Text = String.Empty OrElse TextBox1JS.Text = String.Empty OrElse TextBox2JS.Text = String.Empty OrElse TextBox3JS.Text = String.Empty OrElse TextBox1E.Text = String.Empty OrElse TextBox2E.Text = String.Empty OrElse TextBox3E.Text = String.Empty Then
+                MsgBox("Ha dejado campos vacios. Por favor, reintentelo.")
+            Else
+                If TextBox1E.Text.Contains(",") Or TextBox2E.Text.Contains(",") Or TextBox3E.Text.Contains(",") Or TextBox1S.Text.Contains(",") Or TextBox3S.Text.Contains(",") Or TextBox2S.Text.Contains(",") Or TextBox1JS.Text.Contains(",") Or TextBox3JS.Text.Contains(",") Or TextBox2JS.Text.Contains(",") Or TextBox1MS.Text.Contains(",") Or TextBox3MS.Text.Contains(",") Or TextBox2MS.Text.Contains(",") Then
+                    MsgBox("No debe utilizar la coma para separar decimales. Utilice el punto.")
                 Else
-                    MsgBox("Los precios fueron actualizados de forma exitosa.")
+
+                    Try
+
+
+
+                        If num_prec_for_suite <> 0 Then
+
+                            Dim sqlSent1 As String = "UPDATE `precio` SET `precio_1m` = CAST(" & TextBox1S.Text & " as DECIMAL(6, 2)), `precio_2m` = CAST(" & TextBox2S.Text & " as DECIMAL(6, 2)), `precio_3m` =  CAST(" & TextBox3S.Text & " as DECIMAL(6, 2)) WHERE  (`num_precio` = CAST(" & num_prec_for_suite & " as DECIMAL(6, 2)));"
+                            Dim comandoUpdPrecio1 As MySqlCommand
+                            comandoUpdPrecio1 = New MySqlCommand(sqlSent1, Guau.conk)
+                            comandoUpdPrecio1.ExecuteNonQuery()
+                        End If
+                        If num_prec_for_juniorsuite <> 0 Then
+                            Dim sqlSent2 As String = "UPDATE `precio` SET `precio_1m` = CAST(" & TextBox1JS.Text & " as DECIMAL(6, 2)), `precio_2m` = CAST(" & TextBox2JS.Text & " as DECIMAL(6, 2)), `precio_3m` =  CAST(" & TextBox3JS.Text & " as DECIMAL(6, 2)) WHERE (`num_precio` = CAST(" & num_prec_for_juniorsuite & " as DECIMAL(6, 2)));"
+                            Dim comandoUpdPrecio2 As MySqlCommand
+                            comandoUpdPrecio2 = New MySqlCommand(sqlSent2, Guau.conk)
+                            comandoUpdPrecio2.ExecuteNonQuery()
+                        End If
+                        If num_prec_for_minisuite <> 0 Then
+                            Dim sqlSent3 As String = "UPDATE `precio` SET `precio_1m` = CAST(" & TextBox1MS.Text & " as DECIMAL(6, 2)), `precio_2m` = CAST(" & TextBox2MS.Text & " as DECIMAL(6, 2)), `precio_3m` =  CAST(" & TextBox3MS.Text & " as DECIMAL(6, 2)) WHERE  (`num_precio` = CAST(" & num_prec_for_minisuite & " as DECIMAL(6, 2)));"
+                            Dim comandoUpdPrecio3 As MySqlCommand
+                            comandoUpdPrecio3 = New MySqlCommand(sqlSent3, Guau.conk)
+                            comandoUpdPrecio3.ExecuteNonQuery()
+                        End If
+                        If num_prec_for_estandar <> 0 Then
+                            Dim sqlSent4 As String = "UPDATE `precio` SET `precio_1m` = CAST(" & TextBox1E.Text & " as DECIMAL(6, 2)), `precio_2m` = CAST(" & TextBox2E.Text & " as DECIMAL(6, 2)), `precio_3m` =  CAST(" & TextBox3E.Text & " as DECIMAL(6, 2)) WHERE (`num_precio` = CAST(" & num_prec_for_estandar & " as DECIMAL(6, 2)));"
+                            Dim comandoUpdPrecio4 As MySqlCommand
+                            comandoUpdPrecio4 = New MySqlCommand(sqlSent4, Guau.conk)
+                            comandoUpdPrecio4.ExecuteNonQuery()
+                        End If
+                        If num_prec_for_estandar = 0 Or num_prec_for_juniorsuite = 0 Or num_prec_for_minisuite = 0 Or num_prec_for_suite = 0 Then
+                            Throw New ArgumentException("Error obteniendo ID de habitaciones")
+                        Else
+                            MsgBox("Los precios fueron actualizados de forma exitosa.")
+                        End If
+                    Catch ex As Exception
+                        MsgBox("Ocurrió un error en el proceso de modificar los precios. Lo sentimos. " & ex.Message)
+
+
+
+                    End Try
                 End If
-            Catch ex As Exception
-                MsgBox("Ocurrió un error en el proceso de modificar los precios. Lo sentimos. " & ex.Message)
 
-
-
-            End Try
+            End If
         End If
     End Sub
 
