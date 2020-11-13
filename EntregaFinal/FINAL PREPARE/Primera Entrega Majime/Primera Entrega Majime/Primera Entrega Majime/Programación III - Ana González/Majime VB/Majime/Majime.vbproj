@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7DBC106B-5800-4A08-BC23-384315C3E3EB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Majime.My.MyApplication</StartupObject>
+    <RootNamespace>Majime</RootNamespace>
+    <AssemblyName>Majime</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Majime.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Majime.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.3.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\mysql-connector-net-8.0.21-noinstall\v4.8\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\mysql-connector-net-8.0.21-noinstall\v4.8\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4">
+      <HintPath>..\mysql-connector-net-8.0.21-noinstall\v4.8\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams">
+      <HintPath>..\mysql-connector-net-8.0.21-noinstall\v4.8\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash">
+      <HintPath>..\mysql-connector-net-8.0.21-noinstall\v4.8\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.17.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\mysql-connector-net-8.0.21-noinstall\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgregarCliente.Designer.vb">
+      <DependentUpon>AgregarCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarFotos.Designer.vb">
+      <DependentUpon>AgregarFotos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarFotos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarMascota.Designer.vb">
+      <DependentUpon>AgregarMascota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarMascota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarVehiculos.Designer.vb">
+      <DependentUpon>AgregarVehiculos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarVehiculos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckIn.Designer.vb">
+      <DependentUpon>CheckIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CheckIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Habitaciones.Designer.vb">
+      <DependentUpon>Habitaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Habitaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainGerente.Designer.vb">
+      <DependentUpon>MainGerente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainGerente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainOficinista.Designer.vb">
+      <DependentUpon>MainOficinista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainOficinista.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainRecepcionistaGaraje.Designer.vb">
+      <DependentUpon>MainRecepcionistaGaraje.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainRecepcionistaGaraje.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Pagos.Designer.vb">
+      <DependentUpon>Pagos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pagos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reservas.Designer.vb">
+      <DependentUpon>Reservas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reservas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalidaVehiculos.Designer.vb">
+      <DependentUpon>SalidaVehiculos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalidaVehiculos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerCliente.Designer.vb">
+      <DependentUpon>VerCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VerCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerClienteElegido.Designer.vb">
+      <DependentUpon>VerClienteElegido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VerClienteElegido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerHorarios.Designer.vb">
+      <DependentUpon>VerHorarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VerHorarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerMascota.Designer.vb">
+      <DependentUpon>VerMascota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VerMascota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerMascotaElegida.Designer.vb">
+      <DependentUpon>VerMascotaElegida.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VerMascotaElegida.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerReserva.Designer.vb">
+      <DependentUpon>VerReserva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VerReserva.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerReservaElegida.Designer.vb">
+      <DependentUpon>VerReservaElegida.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VerReservaElegida.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AgregarCliente.resx">
+      <DependentUpon>AgregarCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarFotos.resx">
+      <DependentUpon>AgregarFotos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarMascota.resx">
+      <DependentUpon>AgregarMascota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarVehiculos.resx">
+      <DependentUpon>AgregarVehiculos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckIn.resx">
+      <DependentUpon>CheckIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Habitaciones.resx">
+      <DependentUpon>Habitaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainGerente.resx">
+      <DependentUpon>MainGerente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainOficinista.resx">
+      <DependentUpon>MainOficinista.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainRecepcionistaGaraje.resx">
+      <DependentUpon>MainRecepcionistaGaraje.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pagos.resx">
+      <DependentUpon>Pagos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reservas.resx">
+      <DependentUpon>Reservas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalidaVehiculos.resx">
+      <DependentUpon>SalidaVehiculos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerCliente.resx">
+      <DependentUpon>VerCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerClienteElegido.resx">
+      <DependentUpon>VerClienteElegido.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerHorarios.resx">
+      <DependentUpon>VerHorarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerMascota.resx">
+      <DependentUpon>VerMascota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerMascotaElegida.resx">
+      <DependentUpon>VerMascotaElegida.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerReserva.resx">
+      <DependentUpon>VerReserva.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerReservaElegida.resx">
+      <DependentUpon>VerReservaElegida.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logou.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logou1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ball_red.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accept.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basket_put.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roll_back16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cut_clipboard16_h.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camera_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basket_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_rotate_clockwise.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\script_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
